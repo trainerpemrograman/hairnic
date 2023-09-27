@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 /*** Spinner ***/
-/* #spinner {
+#spinner {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
@@ -23,39 +23,8 @@
 
 img.animated.pulse {
   animation-duration: 5s;
-} */
-/* #loading {
-  width: 100%;
-  background-color: #f3f3f3;
-  border: 1px solid #ccc;
-  height: 30px;
-  display: none;
 }
 
-#progress-bar {
-  width: 0;
-  height: 100%;
-  background-color: #4caf50;
-} */
-.spinner {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  border: 4px solid #f3f3f3; /* Light grey border */
-  border-top: 4px solid #3498db; /* Blue border */
-  animation: spin 1s linear infinite; /* Spin animation */
-  display: none; /* Initially hidden */
-  margin: 50px auto; /* Centered */
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 /*** Button ***/
 .btn {
   font-weight: 500;
