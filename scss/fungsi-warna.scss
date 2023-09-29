@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Foldit:wght@200&family=Inclusive+Sans:ital@1&family=Lato:wght@700;900&family=Lilita+One&family=Martian+Mono:wght@400;500&family=Montserrat:ital,wght@0,100;0,400;0,900;1,200;1,900&family=Mooli&family=Noto+Sans+JP:wght@100;200;300&family=Onest&family=Pangolin&family=Phudu:wght@600&display=swap");
+// ini untuk fungsi ubah
+@function ubah($map, $key) {
+  @return map-get($map, $key);
+}
+// ini untuk deklarasi variable dan tipe data
+$warna-btn: (
+  "dark": #5cd2e6,
+  "dark-1": #2e4374,
+);
+
+$jenis-font: (
+  "font1": "Onest",
+  "font2": "Gabarito",
+);
+
+$ukuran-font: (
+  "small": 14px,
+  "medium": 28px,
+  "large": 36px,
+);
+
+// Ini untuk panggil fungsinya
+.display-4 {
+  font-family: ubah($jenis-font, "font1");
+
+  font-size: ubah($ukuran-font, "large");
+}
+p {
+  font-family: ubah($jenis-font, "font2");
+  font-size: ubah($ukuran-font, "small");
+}
+.btn-dark {
+  background-color: ubah($warna-btn, "dark");
+}
+
+.fa {
+  color: ubah($warna-btn, "dark") !important;
+}
+
+.feature-item:hover,
+.fa:hover {
+  background-color: ubah($warna-btn, "dark") !important;
+  color: ubah($warna-btn, "dark-1") !important;
+}

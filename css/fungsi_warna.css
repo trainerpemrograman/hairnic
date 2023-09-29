@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Foldit:wght@200&family=Inclusive+Sans:ital@1&family=Lato:wght@700;900&family=Lilita+One&family=Martian+Mono:wght@400;500&family=Montserrat:ital,wght@0,100;0,400;0,900;1,200;1,900&family=Mooli&family=Noto+Sans+JP:wght@100;200;300&family=Onest&family=Pangolin&family=Phudu:wght@600&display=swap");
+.display-4 {
+  font-family: "Onest";
+  font-size: 36px;
+}
+
+p {
+  font-family: "Gabarito";
+  font-size: 14px;
+}
+
+.btn-dark {
+  background-color: #5cd2e6;
+}
+
+.fa {
+  color: #5cd2e6 !important;
+}
+
+.feature-item:hover,
+.fa:hover {
+  background-color: #5cd2e6 !important;
+  color: #2e4374 !important;
+}
+
+/*# sourceMappingURL=fungsi_warna.css.map */
