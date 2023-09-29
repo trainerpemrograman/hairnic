@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Foldit:wght@200&family=Inclusive+Sans:ital@1&family=Lato:wght@700;900&family=Lilita+One&family=Martian+Mono:wght@400;500&family=Montserrat:ital,wght@0,100;0,400;0,900;1,200;1,900&family=Mooli&family=Noto+Sans+JP:wght@100;200;300&family=Onest&family=Pangolin&family=Phudu:wght@600&display=swap");
-// ini untuk fungsi ubah
+// ini untuk fungsi ubah dan ukuran lebar
 @function ubah($map, $key) {
   @return map-get($map, $key);
+}
+
+@function atur-width($n) {
+  @return $n * $first-width + ($n - 1) * $second-width;
 }
 // ini untuk deklarasi variable dan tipe data
 $warna-btn: (
@@ -19,6 +23,9 @@ $ukuran-font: (
   "medium": 28px,
   "large": 36px,
 );
+
+$first-width: 5px;
+$second-width: 5px;
 
 // Ini untuk panggil fungsinya
 .display-4 {
@@ -42,4 +49,9 @@ p {
 .fa:hover {
   background-color: ubah($warna-btn, "dark") !important;
   color: ubah($warna-btn, "dark-1") !important;
+}
+
+#set_width {
+  padding-left: atur-width(10);
+  font-weight: 700;
 }
