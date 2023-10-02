@@ -1,0 +1,42 @@
+@import "ukuran";
+
+@mixin text-size($scale) {
+  font-size: $base-font-size * $scale;
+}
+
+body {
+  @include text-size(1);
+}
+
+h3 {
+  @include text-size(3);
+  font-weight: bold;
+  color: cobalt;
+}
+
+h5 {
+  @include text-size(2);
+  color: grey;
+}
+
+p {
+  @include text-size(1.5);
+}
+
+body {
+  font: 100% $font-stack;
+  background-color: $background-color;
+}
+
+$primary-color: blue;
+
+h1 {
+  $primary-color: green !global;
+  color: $primary-color;
+  font-size: $ukuranJudul !important;
+}
+
+p {
+  color: $primary-color;
+  font-size: $ukuranParagraf;
+}

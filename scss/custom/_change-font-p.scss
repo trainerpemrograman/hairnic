@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Croissant+One&family=Dela+Gothic+One&family=Foldit:wght@200&family=Gabarito&family=Inclusive+Sans:ital@1&family=Lato:wght@700;900&family=Lilita+One&family=Martian+Mono:wght@400;500&family=Montserrat:ital,wght@0,100;0,400;0,900;1,200;1,900&family=Mooli&family=Noto+Sans+JP:wght@100;200;300&family=Onest&family=Pangolin&family=Phudu:wght@600&family=Young+Serif&display=swap");
+
+$font-baru-paragraf: "Young Serif", serif;
+
+@mixin change-font-p {
+  font-family: $font-baru-paragraf;
+}
+
+p,
+span,
+h5 {
+  @include change-font-p;
+}

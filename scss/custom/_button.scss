@@ -1,0 +1,7 @@
+$color: #419197;
+
+$btn-color: $color; //mengakses variabel $color menggunakan namespace
+
+button {
+  background-color: $btn-color !important;
+}
