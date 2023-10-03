@@ -1,0 +1,11 @@
+@function scale-below($value, $base, $dev: 5) {
+  @while $value > $base {
+    $value: $value - $dev;
+  }
+
+  @return $value;
+}
+
+.title-normal {
+  font-size: scale-below(43px, 30px);
+}
