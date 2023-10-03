@@ -1,0 +1,10 @@
+@import "warna";
+
+@each $name, $color, $size in $fonts {
+  .font-#{$name} {
+    color: $color;
+    font-size: $size;
+    display: inline-block;
+    padding-top: 10px;
+  }
+}
