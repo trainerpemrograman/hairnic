@@ -1,0 +1,19 @@
+@import "warna";
+@mixin warna-text($ukuran, $is-success: false) {
+  font-size: $ukuran;
+
+  @if $is-success {
+    background-color: $warna-text1 !important;
+    color: $warna-text;
+  } @else {
+    background-color: $warna-text !important;
+    color: $warna-text1;
+  }
+}
+
+.text-1 {
+  @include warna-text(20px, $is-success: true);
+}
+.text-2 {
+  @include warna-text(15px, $is-success: false);
+}

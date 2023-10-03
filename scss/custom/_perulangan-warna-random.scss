@@ -1,0 +1,6 @@
+@import "warna";
+@each $name, $color in $types {
+  .bg-random-#{$name} {
+    background-color: $color;
+  }
+}

@@ -1,0 +1,20 @@
+@import "warna";
+@mixin bg-card($warna, $ukuran, $posisi) {
+  background-color: $warna;
+
+  @if $posisi == left {
+    padding-left: $ukuran !important;
+  } @else if $posisi == right {
+    padding-right: $ukuran !important;
+  } @else {
+    @error "Left-right only";
+  }
+}
+
+.bg_card {
+  @include bg-card($bg-card, 50px, left);
+}
+
+.bg_card1 {
+  @include bg-card($bg-card, 100px, right);
+}

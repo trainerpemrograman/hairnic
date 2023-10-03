@@ -1,0 +1,7 @@
+@import "warna";
+
+@each $color in $colors {
+  .warna-bg-#{$color} {
+    background-color: $color !important;
+  }
+}

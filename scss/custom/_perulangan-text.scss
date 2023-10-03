@@ -1,0 +1,6 @@
+@import "ukuran";
+@for $i from 1 to 4 {
+  .text-display-#{$i} {
+    font-size: $base-font-size * $i;
+  }
+}

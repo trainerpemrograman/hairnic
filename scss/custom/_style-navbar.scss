@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dela+Gothic+One&family=Foldit:wght@200&family=Inclusive+Sans:ital@1&family=Lato:wght@700;900&family=Lilita+One&family=Martian+Mono:wght@400;500&family=Montserrat:ital,wght@0,400;0,900;1,200;1,900&family=Mooli&family=Pangolin&family=Phudu:wght@600&display=swap");
-
-$font-navbar: "Dela Gothic One", cursive;
-$warna-font: blue;
-$ukuran-font: 16px;
+@import "warna";
 
 .nav-item {
   font-family: $font-navbar;

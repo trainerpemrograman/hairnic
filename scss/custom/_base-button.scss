@@ -1,0 +1,17 @@
+@mixin base-button($bg-color) {
+  font-family: "Fakt Soft Pro";
+  font-size: 12px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 16px;
+  color: white;
+  background-color: $bg-color;
+}
+
+.btn-primary {
+  @include base-button(#b931fc);
+}
+
+.btn-secondary {
+  @include base-button(#ff6969);
+}

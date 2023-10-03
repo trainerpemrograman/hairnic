@@ -1,0 +1,6 @@
+@import "ukuran";
+@for $i from 1 through 4 {
+  .text-heading-#{$i} {
+    font-size: $base-font-size * $i;
+  }
+}
